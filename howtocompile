@@ -1,0 +1,12 @@
+configure
+
+	make menuconfig
+
+
+build
+
+	make -j3 deb-pkg LOCALVERSION=-amd64 KDEB_PKGVERSION=3.14.18-0
+
+	or
+
+	make -j3 deb-pkg LOCALVERSION=-686-pae KDEB_PKGVERSION=3.14.18-0
